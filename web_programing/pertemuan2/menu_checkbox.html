@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Website Bootstrap Saya</title>
+    
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(
+                135deg,
+                #eef4ff 0%,
+                #f8fbff 50%,
+                #eaf7ff 100%
+            );
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #1f2937;
+        }
+
+
+        .navbar {
+            margin: 14px 18px 0;
+            border-radius: 16px;
+            padding: 10px 14px;
+            background: rgba(255, 255, 255, 0.92) !important;
+            box-shadow: 0 8px 25px rgba(31, 41, 55, 0.10);
+            border: 1px solid rgba(148, 163, 184, 0.20);
+        }
+
+
+        .navbar-brand {
+            font-weight: 800;
+            color: #2563eb !important;
+            letter-spacing: .3px;
+        }
+
+
+        .nav-link {
+            font-weight: 600;
+            color: #475569 !important;
+            border-radius: 10px;
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+            transition: .2s ease;
+        }
+
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #2563eb !important;
+            background: #eff6ff;
+        }
+
+
+        .dropdown-menu {
+            border: 0;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(15, 23, 42, .12);
+        }
+
+
+        .form-control {
+            border-radius: 10px;
+            border: 1px solid #dbe4f0;
+        }
+
+
+        .btn-outline-success {
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+
+        .container.text-center {
+            margin-top: 28px;
+            padding: 22px;
+            background: rgba(255, 255, 255, .72);
+            border: 1px solid rgba(148, 163, 184, .18);
+            border-radius: 20px;
+            box-shadow: 0 12px 35px rgba(15, 23, 42, .08);
+        }
+
+
+        .gambar {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 10px 28px rgba(15, 23, 42, .16);
+            transition: 0.3s ease;
+        }
+
+
+        .gambar:hover {
+            transform: scale(1.03);
+        }
+
+
+        @media (max-width: 768px) {
+            .navbar {
+                margin: 8px;
+            }
+
+
+            .container.text-center {
+                margin-top: 16px;
+                padding: 12px;
+            }
+
+
+            .gambar {
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+
+            <a class="navbar-brand" href="#">Navbar</a>
+
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div
+                class="collapse navbar-collapse"
+                id="navbarSupportedContent"
+            >
+
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="#"
+                        >
+                            Home
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Dropdown
+                        </a>
+
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Action
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Another action
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Something else here
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link disabled"
+                            aria-disabled="true"
+                        >
+                            Disabled
+                        </a>
+                    </li>
+
+
+                </ul>
+
+
+                <form class="d-flex" role="search">
+                    <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                    >
+
+
+                    <button
+                        class="btn btn-outline-success"
+                        type="submit"
+                    >
+                        Search
+                    </button>
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- 3 Column Gambar -->
+    <div class="container text-center">
+
+
+        <div class="row g-3">
+
+
+            <!-- Gambar 1 -->
+            <div class="col-md-4">
+                <img
+                    src="https://instagram.fcgk27-1.fna.fbcdn.net/v/t51.75761-15/476401067_18321268804166834_3075008399950201649_n.webp?_nc_cat=111&_nc_map=urlgen_bucketless&ig_cache_key=MzU2MzQzMDQwNDY2OTM2NjUzMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Nm_PQzkQOyEQ7kNvwFEyBH-&_nc_oc=AdppUwm2t9ngnlPx0PHwCilDAEJN4Aq0suaIWSleNmzEUHyO6en0o7jQd1e84YfVYLU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgk27-1.fna&_nc_gid=Q2X4nE7TbKiTux83kgSlcQ&_nc_ss=7a22e&oh=00_AQN4IDr6x9zIyVq3FWlFzNwfC_ugRaZUFlf_knWEUAkRoA&oe=6AD769C2"
+                    class="gambar"
+                    alt="Gambar 1"
+                >
+            </div>
+
+
+            <!-- Gambar 2 -->
+            <div class="col-md-4">
+                <img
+                    src="https://instagram.fcgk27-1.fna.fbcdn.net/v/t51.75761-15/476456123_18321268813166834_703597385408614213_n.webp?_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=MzU2MzQzMDQwNTA4ODgyMDI4Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=gmleqpJmZ4IQ7kNvwFzJEwI&_nc_oc=AdowD6jsF-DHTrFehO1KmZGfYxMcH--mdX6TlQWobmvT_WzbD1_k-KsFKNaIwAitPM4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgk27-1.fna&_nc_gid=Q2X4nE7TbKiTux83kgSlcQ&_nc_ss=7a22e&oh=00_AQPkYsRt0Yk2ys0eWiZcaHtNenGX_AAO2XiwnlLyb0KNeQ&oe=6AD78E4A"
+                    class="gambar"
+                    alt="Gambar 2"
+                >
+            </div>
+
+
+            <!-- Gambar 3 -->
+            <div class="col-md-4">
+                <img
+                    src="https://instagram.fcgk27-1.fna.fbcdn.net/v/t51.75761-15/476980971_18321268876166834_3393058890861208464_n.webp?_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=MzU2MzQzMDQwNTMxNTMwMDgwNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=aXG2SsF9cN8Q7kNvwFKinpc&_nc_oc=AdroIl_D3Dx2KlsQpVTppn2RXqXDH9tql9Zbd68k4j8yemf5d4ajtm2QCkHqrrTRGXQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgk27-1.fna&_nc_gid=Q2X4nE7TbKiTux83kgSlcQ&_nc_ss=7a22e&oh=00_AQMqhqOoHgjdEdb71Js0-Ke3jPPoRkBXX0-HmKPnNBpSng&oe=6AD774DB"
+                    class="gambar"
+                    alt="Gambar 3"
+                >
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+
+</body>
+</html>
